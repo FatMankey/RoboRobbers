@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 54172622844639512}
   - component: {fileID: 65406722827673340}
   - component: {fileID: 114407519841737132}
-  - component: {fileID: 114983111142797808}
   - component: {fileID: 65556198681737484}
+  - component: {fileID: 114944890632667138}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Player
@@ -100,8 +100,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6927662, y: 2.35, z: 0.2363082}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.46936178, y: 2.35, z: 1.0843401}
+  m_Center: {x: -0.045730352, y: 0, z: -0.16858482}
 --- !u!65 &65556198681737484
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -156,8 +156,8 @@ MonoBehaviour:
   MinDistance: -17
   MaxDistance: 20
   CurrentCamera: {fileID: 0}
-  Grounded: 0
---- !u!114 &114983111142797808
+  Grounded: 1
+--- !u!114 &114944890632667138
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,10 +165,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1387236987321338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01c5b589a2d5f3444b6e9a19c8a5cdcd, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d66bc926e337304599bf61a3f54ef73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelID: 0
+  BulletPool: []
+  SpriteShot: {fileID: 0}
+  BulletSize: 10
+  _collider: {fileID: 0}
+  _ColliderTrigger: {fileID: 0}
 --- !u!212 &212701963918081180
 SpriteRenderer:
   m_ObjectHideFlags: 1
